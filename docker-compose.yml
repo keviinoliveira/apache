@@ -1,0 +1,8 @@
+services:
+  apache:
+    image: httpd
+    cotainer_name: my-apache
+    ports:
+    - "80:80"
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
